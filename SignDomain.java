@@ -1,4 +1,4 @@
-package it.unive.lisa.analysis.nonrelational.value.impl;
+package it.unive.lisa.analysis.nonrelational.value;
 
 import it.unive.lisa.analysis.SemanticDomain.Satisfiability;
 import it.unive.lisa.analysis.SemanticException;
@@ -46,26 +46,34 @@ public class SignDomain extends BaseNonRelationalValueDomain<SignDomain> {
 		return true;
 	}
 	
-	@Override
-	public String toString() {
+	// @Override
+	// public String toString() {
 		// TODO Auto-generated method stub
-		return sign.name();
-	}
-	@Override
-	public SignDomain lub(SignDomain other) throws SemanticException {
+		// return sign.name();
+	// }
+//	@Override
+//	public SignDomain lub(SignDomain other) throws SemanticException {
 		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
-	public SignDomain widening(SignDomain other) throws SemanticException {
+		// return null;
+	// }
+	// @Override
+	// public SignDomain widening(SignDomain other) throws SemanticException {
 		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
-	public boolean lessOrEqual(SignDomain other) throws SemanticException {
+		// return null;
+	// }
+	
+	// @Override
+		//public SignDomain widening(SignDomain other) throws SemanticException {
+			// TODO Auto-generated method stub
+			// return new SignDomain(Sign.TOP);
+			// return lubAux(other);
+		// }
+	
+	// @Override
+	// public boolean lessOrEqual(SignDomain other) throws SemanticException {
 		// TODO Auto-generated method stub
-		return false;
-	}
+		// return false;
+	// }
 	@Override
 	public SignDomain top() {
 		return new SignDomain(Sign.TOP);
@@ -86,17 +94,17 @@ public class SignDomain extends BaseNonRelationalValueDomain<SignDomain> {
 	}
 	
 	
-	@Override
-	public SignDomain eval(ValueExpression expression, ValueEnvironment<SignDomain> environment, ProgramPoint pp) {
+	// @Override
+	// public SignDomain eval(ValueExpression expression, ValueEnvironment<SignDomain> environment, ProgramPoint pp) {
 		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
-	public Satisfiability satisfies(ValueExpression expression, ValueEnvironment<SignDomain> environment,
-			ProgramPoint pp) {
+		// return top();
+	// }
+	// @Override
+	// public Satisfiability satisfies(ValueExpression expression, ValueEnvironment<SignDomain> environment,
+		//	ProgramPoint pp) {
 		// TODO Auto-generated method stub
-		return null;
-	}
+		// return top();
+//	}
 	@Override
 	public String representation() {
 		// TODO Auto-generated method stub
